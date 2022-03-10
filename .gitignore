@@ -1,0 +1,18 @@
+## Directory environment varibales
+.envrc
+
+### Terraform ###
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Ensure no secrets file is added
+secrets.tfvars
+*.tfvars.json
