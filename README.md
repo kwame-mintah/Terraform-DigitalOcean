@@ -62,7 +62,10 @@ No modules.
 | Name | Type |
 |------|------|
 | [digitalocean_droplet.droplet](https://registry.terraform.io/providers/digitalocean/digitalocean/latest/docs/resources/droplet) | resource |
+| [digitalocean_loadbalancer.droplet](https://registry.terraform.io/providers/digitalocean/digitalocean/latest/docs/resources/loadbalancer) | resource |
+| [digitalocean_record.droplet](https://registry.terraform.io/providers/digitalocean/digitalocean/latest/docs/resources/record) | resource |
 | [digitalocean_account.account_details](https://registry.terraform.io/providers/digitalocean/digitalocean/latest/docs/data-sources/account) | data source |
+| [digitalocean_domain.droplet](https://registry.terraform.io/providers/digitalocean/digitalocean/latest/docs/data-sources/domain) | data source |
 | [digitalocean_ssh_key.personal_ssh_key](https://registry.terraform.io/providers/digitalocean/digitalocean/latest/docs/data-sources/ssh_key) | data source |
 
 ## Inputs
@@ -79,5 +82,6 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_droplet_limit"></a> [droplet\_limit](#output\_droplet\_limit) | Return the digital ocean account droplet limit |
-| <a name="output_server_ipv4_address"></a> [server\_ipv4\_address](#output\_server\_ipv4\_address) | Return all droplet ipv4 address |
+| <a name="output_loadbalancer"></a> [loadbalancer](#output\_loadbalancer) | Return the IP address of the load balancer. |
+| <a name="output_server_ipv4_address"></a> [server\_ipv4\_address](#output\_server\_ipv4\_address) | Return all droplet ipv4 addresses |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK --->

@@ -31,6 +31,7 @@ EOF
 variable "droplet_size" {
   description = <<-EOF
   The droplet size.
+  
 EOF
 
   type    = string
