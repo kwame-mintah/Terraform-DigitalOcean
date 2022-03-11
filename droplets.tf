@@ -5,7 +5,7 @@ resource "digitalocean_droplet" "droplet" {
   image    = "ubuntu-20-04-x64"
   name     = "terraform-${var.region}-${count.index + 1}"
   region   = var.region
-  size     = "s-1vcpu-1gb"
+  size     = var.droplet_size
   ssh_keys = [data.digitalocean_ssh_key.personal_ssh_key.id]
 
   # ensures that we create the new resource before we destroy the old one

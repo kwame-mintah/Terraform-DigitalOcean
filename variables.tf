@@ -27,3 +27,12 @@ EOF
   type    = number
   default = 1
 }
+
+variable "droplet_size" {
+  description = <<-EOF
+  The droplet size.
+EOF
+
+  type    = string
+  default = "s-1vcpu-1gb"
+}
