@@ -70,8 +70,8 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_do_api_token"></a> [do\_api\_token](#input\_do\_api\_token) | (Required) Your digital ocean API Token required for changes<br>Set environment variable `TF_VAR_do_api_token` with value.<br>Or using -var="do\_api\_token=..." CLI option | `string` | n/a | yes |
-| <a name="input_droplet_count"></a> [droplet\_count](#input\_droplet\_count) | (Optional) The amount of droplets to be created<br>in the specified region. Default: 1. | `number` | `1` | no |
-| <a name="input_region"></a> [region](#input\_region) | (Required) Specify the region that the droplet will<br>be located. Default: London 1. | `string` | `"lon1"` | no |
+| <a name="input_droplet_count"></a> [droplet\_count](#input\_droplet\_count) | The amount of droplets to be created<br>in the specified region. | `number` | `1` | no |
+| <a name="input_region"></a> [region](#input\_region) | Specify the datacenter that the droplet will<br>be located. | `string` | `"lon1"` | no |
 
 ## Outputs
 

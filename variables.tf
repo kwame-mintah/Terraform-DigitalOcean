@@ -10,8 +10,8 @@ EOF
 
 variable "region" {
   description = <<-EOF
-    (Required) Specify the region that the droplet will
-    be located. Default: London 1.
+    Specify the datacenter that the droplet will
+    be located.
 EOF
 
   type    = string
@@ -20,8 +20,8 @@ EOF
 
 variable "droplet_count" {
   description = <<-EOF
-  (Optional) The amount of droplets to be created
-  in the specified region. Default: 1.
+  The amount of droplets to be created
+  in the specified region.
 EOF
 
   type    = number
