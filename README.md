@@ -18,9 +18,12 @@ This project will focus on the [DigitalOcean](https://github.com/digitalocean/te
 
 ## Usage
 
-1. Run a `terraform plan -var-file=regions.tfvars`
-2. Review the plan and if as expected `terraform apply -var-file=regions.tfvars`
-3. Check your droplets in DigitalOcean to ensure new droplets have been created.
+1. Create a new workspace `terraform workspace new dev`
+2. Run a `terraform plan -var-file=regions.tfvars`
+3. Review the plan and if as expected `terraform apply -var-file=regions.tfvars`
+4. Check in DigitalOcean to ensure new droplets have been created.
+
+Please note that `.tfstate` files are stored locally on your machine as no backend has been specified. If you would like to properly version control your state files, it is possible to use an S3 bucket to store these files. This will ensure anyone else other than you running a plan/apply will always be using the same state file.
 
 ### Pre-Commit hooks
 
@@ -64,6 +67,7 @@ No modules.
 | [digitalocean_droplet.droplet](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/resources/droplet) | resource |
 | [digitalocean_loadbalancer.droplet](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/resources/loadbalancer) | resource |
 | [digitalocean_record.droplet](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/resources/record) | resource |
+| [digitalocean_tag.tags](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/resources/tag) | resource |
 | [digitalocean_account.account_details](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/data-sources/account) | data source |
 | [digitalocean_domain.droplet](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/data-sources/domain) | data source |
 | [digitalocean_ssh_key.personal_ssh_key](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/data-sources/ssh_key) | data source |
@@ -81,7 +85,7 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_droplet_limit"></a> [droplet\_limit](#output\_droplet\_limit) | Return the digital ocean account droplet limit |
+| <a name="output_droplet_limit"></a> [droplet\_limit](#output\_droplet\_limit) | Return the digital oceanaccount droplet limit |
 | <a name="output_loadbalancer"></a> [loadbalancer](#output\_loadbalancer) | Return the IP address of the load balancer. |
 | <a name="output_server_ipv4_address"></a> [server\_ipv4\_address](#output\_server\_ipv4\_address) | Return all droplet ipv4 addresses |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK --->

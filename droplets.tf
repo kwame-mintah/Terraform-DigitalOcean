@@ -1,3 +1,8 @@
+# Create a new tag to be used on droplets
+resource "digitalocean_tag" "tags" {
+  name = terraform.workspace
+}
+
 # Create a new Web Droplet in the lon1 region
 # Terraform destroy first then create
 resource "digitalocean_droplet" "droplet" {
@@ -7,6 +12,7 @@ resource "digitalocean_droplet" "droplet" {
   region   = var.region
   size     = var.droplet_size
   ssh_keys = [data.digitalocean_ssh_key.personal_ssh_key.id]
+  tags     = [digitalocean_tag.tags.id]
 
   # ensures that we create the new resource before we destroy the old one
   # https://www.terraform.io/docs/configuration/resources.html#lifecycle-lifecycle-customizations

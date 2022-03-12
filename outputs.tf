@@ -1,6 +1,6 @@
 output "droplet_limit" {
   description = <<-EOF
-    Return the digital ocean account droplet limit
+    Return the digital oceanaccount droplet limit
 
 EOF
 
