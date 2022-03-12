@@ -76,7 +76,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_do_api_token"></a> [do\_api\_token](#input\_do\_api\_token) | (Required) Your digital ocean API Token required for changes<br>Set environment variable `TF_VAR_do_api_token` with value.<br>Or using -var="do\_api\_token=..." CLI option | `string` | n/a | yes |
+| <a name="input_do_api_token"></a> [do\_api\_token](#input\_do\_api\_token) | Your digital ocean API Token required for changes<br>Set environment variable `TF_VAR_do_api_token` with value.<br>Or using -var="do\_api\_token=..." CLI option | `string` | n/a | yes |
 | <a name="input_droplet_count"></a> [droplet\_count](#input\_droplet\_count) | The amount of droplets to be created<br>in the specified region. | `number` | `1` | no |
 | <a name="input_droplet_size"></a> [droplet\_size](#input\_droplet\_size) | The droplet size. | `string` | `"s-1vcpu-1gb"` | no |
 | <a name="input_region"></a> [region](#input\_region) | Specify the datacenter that the droplet will<br>be located. | `string` | `"lon1"` | no |

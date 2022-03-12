@@ -1,6 +1,6 @@
 variable "do_api_token" {
   description = <<-EOF
-    (Required) Your digital ocean API Token required for changes
+    Your digital ocean API Token required for changes
     Set environment variable `TF_VAR_do_api_token` with value.
     Or using -var="do_api_token=..." CLI option
 EOF
