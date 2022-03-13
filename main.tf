@@ -15,6 +15,6 @@ data "digitalocean_ssh_key" "personal_ssh_key" {
 # Create DNS Record for droplets
 # NOTE: You need to have a domain name registered and
 # managed by DigitalOcean.
-data "digitalocean_domain" "droplet" {
+data "digitalocean_domain" "domain_record_hostname" {
   name = "k-dev.space"
 }

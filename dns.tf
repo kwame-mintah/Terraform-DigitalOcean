@@ -2,7 +2,7 @@
 # will be the IPv4 address for our load balancer an error will be triggered 
 # if domain name or record is not managed by your DigitalOcean account.
 resource "digitalocean_record" "droplet" {
-  domain = data.digitalocean_domain.droplet.name
+  domain = data.digitalocean_domain.domain_record_hostname.name
   type   = "A"
   name   = var.region
   value  = digitalocean_loadbalancer.droplet.ip

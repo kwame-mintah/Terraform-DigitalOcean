@@ -70,7 +70,7 @@ No modules.
 | [digitalocean_record.droplet](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/resources/record) | resource |
 | [digitalocean_tag.tags](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/resources/tag) | resource |
 | [digitalocean_account.account_details](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/data-sources/account) | data source |
-| [digitalocean_domain.droplet](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/data-sources/domain) | data source |
+| [digitalocean_domain.domain_record_hostname](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/data-sources/domain) | data source |
 | [digitalocean_ssh_key.personal_ssh_key](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/data-sources/ssh_key) | data source |
 
 ## Inputs
