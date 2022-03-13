@@ -1,10 +1,18 @@
-output "droplet_limit" {
+output "project_resources" {
   description = <<-EOF
-    Return the digital oceanaccount droplet limit
+    Return resources assoicated to the project
 
 EOF
 
-  value = data.digitalocean_account.account_details.droplet_limit
+  value = digitalocean_project.project.resources
+}
+output "account_status" {
+  description = <<-EOF
+    Return your digitalocean account status
+
+EOF
+
+  value = data.digitalocean_account.account_details.status
 }
 
 output "server_ipv4_address" {
@@ -21,5 +29,6 @@ output "loadbalancer" {
   Return the IP address of the load balancer.
 
 EOF
-  value       = digitalocean_loadbalancer.droplet.ip
+
+  value = digitalocean_loadbalancer.droplet.ip
 }

@@ -87,7 +87,8 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_droplet_limit"></a> [droplet\_limit](#output\_droplet\_limit) | Return the digital oceanaccount droplet limit |
+| <a name="output_account_status"></a> [account\_status](#output\_account\_status) | Return your digitalocean account status |
 | <a name="output_loadbalancer"></a> [loadbalancer](#output\_loadbalancer) | Return the IP address of the load balancer. |
+| <a name="output_project_resources"></a> [project\_resources](#output\_project\_resources) | Return resources assoicated to the project |
 | <a name="output_server_ipv4_address"></a> [server\_ipv4\_address](#output\_server\_ipv4\_address) | Return all droplet ipv4 addresses |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK --->
