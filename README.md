@@ -66,6 +66,7 @@ No modules.
 |------|------|
 | [digitalocean_droplet.droplet](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/resources/droplet) | resource |
 | [digitalocean_loadbalancer.droplet](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/resources/loadbalancer) | resource |
+| [digitalocean_project.project](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/resources/project) | resource |
 | [digitalocean_record.droplet](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/resources/record) | resource |
 | [digitalocean_tag.tags](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/resources/tag) | resource |
 | [digitalocean_account.account_details](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/data-sources/account) | data source |
@@ -79,6 +80,7 @@ No modules.
 | <a name="input_do_api_token"></a> [do\_api\_token](#input\_do\_api\_token) | Your digital ocean API Token required for changes<br>Set environment variable `TF_VAR_do_api_token` with value.<br>Or using -var="do\_api\_token=..." CLI option | `string` | n/a | yes |
 | <a name="input_droplet_count"></a> [droplet\_count](#input\_droplet\_count) | The amount of droplets to be created<br>in the specified region. | `number` | `1` | no |
 | <a name="input_droplet_size"></a> [droplet\_size](#input\_droplet\_size) | The droplet size. | `string` | `"s-1vcpu-1gb"` | no |
+| <a name="input_environment"></a> [environment](#input\_environment) | The environment of the project's resources. The possible values <br>are: `Development`, `Staging`, `Production`. | `string` | n/a | yes |
 | <a name="input_region"></a> [region](#input\_region) | Specify the datacenter that the droplet will<br>be located. | `string` | `"lon1"` | no |
 
 ## Outputs

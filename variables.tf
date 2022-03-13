@@ -8,6 +8,15 @@ EOF
   type = string
 }
 
+variable "environment" {
+  description = <<-EOF
+    The environment of the project's resources. The possible values 
+    are: `Development`, `Staging`, `Production`.
+EOF
+
+  type = string
+}
+
 variable "region" {
   description = <<-EOF
     Specify the datacenter that the droplet will
