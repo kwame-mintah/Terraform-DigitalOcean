@@ -7,21 +7,23 @@ This project will focus on the [DigitalOcean](https://github.com/digitalocean/te
 ## Development
 
 ### Dependencies
-- terraform
-- pre-commit
-- terraform-docs this is required for `terraform_docs` hooks.
+
+- [terraform](https://www.terraform.io/)
+- [terragrunt](https://terragrunt.gruntwork.io/)
+- [pre-commit](https://pre-commit.com/)
+- [terraform-docs](https://terraform-docs.io/) this is required for `terraform_docs` hooks.
 
 ## Prerequisites
+
 1. Have a [DigitalOcean](https://digitalocean.com) account. 
 2. You will need create a DigitalOcean API token [follow instructions](https://www.digitalocean.com/docs/api/create-personal-access-token/).
 3. Add an ssh-key to your account as per [instructions](https://docs.digitalocean.com/products/droplets/how-to/add-ssh-keys/to-account/).
 
 ## Usage
 
-1. Create a new workspace `terraform workspace new dev`
-2. Run a `terraform plan -var-file=regions.tfvars`
-3. Review the plan and if as expected `terraform apply -var-file=regions.tfvars`
-4. Check in DigitalOcean to ensure new droplets have been created.
+1. Navigate to the environment you would like to deploy,
+2. Plan your changes with `terragrunt plan` to see what changes will be made,
+3. If you're happy with the changes `terragrunt apply`
 
 Please note that `.tfstate` files are stored locally on your machine as no backend has been specified. If you would like to properly version control your state files, it is possible to use an S3 bucket to store these files. This will ensure anyone else other than you running a plan/apply will always be using the same state file.
 
