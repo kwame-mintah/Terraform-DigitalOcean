@@ -16,3 +16,12 @@ crash.*.log
 # Ensure no secrets file is added
 secrets.tfvars
 *.tfvars.json
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+## Terragrun cache
+.terragrunt-cache
