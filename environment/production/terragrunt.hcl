@@ -5,6 +5,6 @@ terraform {
 
 # These are inputs that need to be passed for the terragrunt configuration
 inputs = {
-  environment = "Production"
+  environment   = "Production"
   droplet_count = 4
 }
