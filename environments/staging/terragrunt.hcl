@@ -5,6 +5,7 @@ terraform {
 
 # These are inputs that need to be passed for the terragrunt configuration
 inputs = {
-  environment   = "Staging"
-  droplet_count = 3
+  environment               = "Staging"
+  droplet_count             = 3
+  deploy_on_push_static_app = false
 }
