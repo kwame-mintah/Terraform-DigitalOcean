@@ -15,7 +15,7 @@ EOF
   value = data.digitalocean_account.account_details.status
 }
 
-output "server_ipv4_address" {
+output "server_ipv4_addresses" {
   description = <<-EOF
     Return all droplet ipv4 addresses
 
@@ -31,4 +31,23 @@ output "loadbalancer" {
 EOF
 
   value = digitalocean_loadbalancer.droplet.ip
+}
+
+output "static_app_live_domain" {
+  description = <<-EOF
+  The live URL of the app.
+
+EOF
+
+  value = digitalocean_app.static_site_app.live_url
+}
+
+output "static_app_updated_at" {
+  description = <<-EOF
+  The date and time of when the app was 
+  last updated.
+
+EOF
+
+  value = digitalocean_app.static_site_app.updated_at
 }

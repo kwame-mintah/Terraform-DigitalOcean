@@ -66,6 +66,7 @@ No modules.
 
 | Name | Type |
 |------|------|
+| [digitalocean_app.static_site_app](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/resources/app) | resource |
 | [digitalocean_droplet.droplet](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/resources/droplet) | resource |
 | [digitalocean_loadbalancer.droplet](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/resources/loadbalancer) | resource |
 | [digitalocean_project.project](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/resources/project) | resource |
@@ -79,6 +80,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_deploy_on_push_static_app"></a> [deploy\_on\_push\_static\_app](#input\_deploy\_on\_push\_static\_app) | Whether to automatically deploy new <br>commits made to the Github repository. | `bool` | n/a | yes |
 | <a name="input_do_api_token"></a> [do\_api\_token](#input\_do\_api\_token) | Your digital ocean API Token required for changes<br>Set environment variable `TF_VAR_do_api_token` with value.<br>Or using -var="do\_api\_token=..." CLI option | `string` | n/a | yes |
 | <a name="input_droplet_count"></a> [droplet\_count](#input\_droplet\_count) | The amount of droplets to be created<br>in the specified region. | `number` | `1` | no |
 | <a name="input_droplet_size"></a> [droplet\_size](#input\_droplet\_size) | The droplet size. | `string` | `"s-1vcpu-1gb"` | no |
@@ -92,5 +94,7 @@ No modules.
 | <a name="output_account_status"></a> [account\_status](#output\_account\_status) | Return your digitalocean account status |
 | <a name="output_loadbalancer"></a> [loadbalancer](#output\_loadbalancer) | Return the IP address of the load balancer. |
 | <a name="output_project_resources"></a> [project\_resources](#output\_project\_resources) | Return resources assoicated to the project |
-| <a name="output_server_ipv4_address"></a> [server\_ipv4\_address](#output\_server\_ipv4\_address) | Return all droplet ipv4 addresses |
+| <a name="output_server_ipv4_addresses"></a> [server\_ipv4\_addresses](#output\_server\_ipv4\_addresses) | Return all droplet ipv4 addresses |
+| <a name="output_static_app_live_domain"></a> [static\_app\_live\_domain](#output\_static\_app\_live\_domain) | The live URL of the app. |
+| <a name="output_static_app_updated_at"></a> [static\_app\_updated\_at](#output\_static\_app\_updated\_at) | The date and time of when the app was <br>last updated. |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK --->

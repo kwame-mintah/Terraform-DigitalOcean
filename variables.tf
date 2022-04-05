@@ -46,3 +46,13 @@ EOF
   type    = string
   default = "s-1vcpu-1gb"
 }
+
+variable "deploy_on_push_static_app" {
+  description = <<-EOF
+  Whether to automatically deploy new 
+  commits made to the Github repository.
+  
+EOF
+
+  type = bool
+}
