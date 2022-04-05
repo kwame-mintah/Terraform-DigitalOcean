@@ -2,7 +2,7 @@
 # Rules created will forward inbound http traffic on port 80
 # to the port 80 on the droplet.
 resource "digitalocean_loadbalancer" "droplet" {
-  name        = "terraform-${var.region}"
+  name        = "terraform-${var.region}-${var.environment}"
   region      = var.region
   droplet_ids = digitalocean_droplet.droplet.*.id
 
