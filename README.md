@@ -27,7 +27,21 @@ This project will focus on the [DigitalOcean](https://github.com/digitalocean/te
 
 Please note that `.tfstate` files are stored locally on your machine as no backend has been specified. If you would like to properly version control your state files, it is possible to use an S3 bucket to store these files. This will ensure anyone else other than you running a plan/apply will always be using the same state file.
 
-### Pre-Commit hooks
+## Accessing resources created
+
+### Droplets
+
+As part of deployment of the droplets, the ssh-key provided will be added to the droplet, this means you can directly ssh into the droplet with `ssh root@XXX.XX.XXX.XX`, replace
+`XXX.XX.XXX.XX` with any of the IP Addresses output `server_ipv4_address` after applying the changes.
+
+### Static App
+
+The static app deployed can be accessed on the URL output `static_app_live_domain` after applying your changes.
+
+### Project resources
+
+All project resources created for each environment can be accessed via the DigitalOcean console. Each environment, should have its own project created.
+## Pre-Commit hooks
 
 Git hook scripts are very helpful for identifying simple issues before pushing any changes. Hooks will run on every commit automatically pointing out issues in the code e.g. trailing whitespace.
 
@@ -37,7 +51,7 @@ Please following [these instructions](https://pre-commit.com/#install) to instal
 
 Additionally, once installed, the hooks can be updated to the latest available version with `pre-commit autoupdate`.
 
-### Documentation Generation
+## Documentation Generation
 
 Code formatting and documentation for `variables` and `outputs` is generated using [pre-commit-terraform](https://github.com/antonbabenko/pre-commit-terraform/releases) hooks that in turn uses [terraform-docs](https://github.com/terraform-docs/terraform-docs) that will insert/update documentation. The following markers have been added to the `README.md`:
 ```
