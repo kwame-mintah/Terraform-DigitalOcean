@@ -4,7 +4,7 @@ output "project_resources" {
 
 EOF
 
-  value = digitalocean_project.project.resources
+  value = digitalocean_project.project[*].resources
 }
 output "account_status" {
   description = <<-EOF
@@ -21,7 +21,7 @@ output "server_ipv4_addresses" {
 
 EOF
 
-  value = digitalocean_droplet.droplet.*.ipv4_address
+  value = digitalocean_droplet.droplet[*].ipv4_address
 }
 
 output "loadbalancer" {

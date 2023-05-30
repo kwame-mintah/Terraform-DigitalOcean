@@ -4,7 +4,7 @@
 resource "digitalocean_loadbalancer" "droplet" {
   name        = "terraform-${var.region}-${var.environment}"
   region      = var.region
-  droplet_ids = digitalocean_droplet.droplet.*.id
+  droplet_ids = digitalocean_droplet.droplet[*].id
 
   forwarding_rule {
     entry_port     = 80
