@@ -64,13 +64,13 @@ Code formatting and documentation for `variables` and `outputs` is generated usi
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | = 1.1.7 |
-| <a name="requirement_digitalocean"></a> [digitalocean](#requirement\_digitalocean) | = 2.18.0 |
+| <a name="requirement_digitalocean"></a> [digitalocean](#requirement\_digitalocean) | = 2.28.1 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_digitalocean"></a> [digitalocean](#provider\_digitalocean) | 2.18.0 |
+| <a name="provider_digitalocean"></a> [digitalocean](#provider\_digitalocean) | 2.28.1 |
 
 ## Modules
 
@@ -80,15 +80,15 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [digitalocean_app.static_site_app](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/resources/app) | resource |
-| [digitalocean_droplet.droplet](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/resources/droplet) | resource |
-| [digitalocean_loadbalancer.droplet](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/resources/loadbalancer) | resource |
-| [digitalocean_project.project](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/resources/project) | resource |
-| [digitalocean_record.droplet](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/resources/record) | resource |
-| [digitalocean_tag.tags](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/resources/tag) | resource |
-| [digitalocean_account.account_details](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/data-sources/account) | data source |
-| [digitalocean_domain.domain_record_hostname](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/data-sources/domain) | data source |
-| [digitalocean_ssh_key.personal_ssh_key](https://registry.terraform.io/providers/digitalocean/digitalocean/2.18.0/docs/data-sources/ssh_key) | data source |
+| [digitalocean_app.static_site_app](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/app) | resource |
+| [digitalocean_droplet.droplet](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/droplet) | resource |
+| [digitalocean_loadbalancer.droplet](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/loadbalancer) | resource |
+| [digitalocean_project.project](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/project) | resource |
+| [digitalocean_record.droplet](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/record) | resource |
+| [digitalocean_tag.tags](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/resources/tag) | resource |
+| [digitalocean_account.account_details](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/account) | data source |
+| [digitalocean_domain.domain_record_hostname](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/domain) | data source |
+| [digitalocean_ssh_key.personal_ssh_key](https://registry.terraform.io/providers/digitalocean/digitalocean/2.28.1/docs/data-sources/ssh_key) | data source |
 
 ## Inputs
 
